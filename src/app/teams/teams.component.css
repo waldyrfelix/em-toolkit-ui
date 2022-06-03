@@ -1,0 +1,10 @@
+.team-card-container {
+    display: block;
+    padding: 20px;
+}
+
+.team-card-container .team-card {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    width: 300px;
+}

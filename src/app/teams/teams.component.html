@@ -1,1 +1,15 @@
 <h1>Times</h1>
+
+<div class="team-card-container">
+    <mat-card class="team-card" *ngFor="let team of teams">
+        <mat-card-title-group>
+            <mat-card-title>{{team.name}}</mat-card-title>
+            <mat-card-subtitle>Planejamento de {{team.headcount}} pessoas, orçamento {{team.budget | currency}}
+            </mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content>
+            <span class="cost">Custo {{team.installedCost | currency}}</span>
+            <span class="headcount">{{team.installedHeadcount}}</span>
+        </mat-card-content>
+    </mat-card>
+</div>
